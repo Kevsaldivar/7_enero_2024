@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+#button1 {
+    text-align: center;
+    color: green;
+    height: 50px;
+    width: 75px;
+    margin-right: 200px;
+
+}
+
+#button2 {
+    text-align: center;
+    color: red;
+    height: 50px;
+    width: 75px;
+    margin-left: 10px; 
+    position: absolute;
+    z-index: 1;
+}
+
+img {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+.caja1{
+    display: flex;
+    justify-content: center;
+}
+
+.caja2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    #button1,
+    #button2 {
+        width: 100px; /* Ajusta el ancho de los botones para pantallas más pequeñas */
+        margin: 5px; /* Margen más pequeño para dispositivos móviles */
+    }
+
+    .caja1 {
+        flex-direction: column; /* Cambiar la disposición de los botones a vertical */
+    }
+
+    img {
+        width: 300px; /* Redimensionar la imagen para dispositivos móviles */
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 60px; /* Reducir el tamaño del título para dispositivos móviles */
+    }
+}
